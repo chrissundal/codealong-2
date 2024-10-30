@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="changeView()">
+    <div id="app"></div>
+    <script>
+        function changeView(){
+            if(model.app.currentPage === "mainPage"){
+                updateHomeView();
+            }
+            else if(model.app.currentPage === "friendPage"){
+                updateFriendView();
+            }
+        }
+
+    </script>
+    <script src="model.js"></script>
+    <script src="controller.js"></script>
+    <script src="friendController.js"></script>
+    <script src="friendView.js"></script>
+    <script src="view.js"></script>
+</body>
+</html>
